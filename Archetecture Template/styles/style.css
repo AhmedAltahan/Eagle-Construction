@@ -63,6 +63,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     opacity: 0.7;
+    z-index: 10;
 }
 
 nav a:hover {
@@ -124,7 +125,7 @@ header h1 span.two {
 section.projects {
     background-color: rgba(221, 221, 221, 0.127);
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 30px;
 }
 
 section.projects h3 {
@@ -149,7 +150,7 @@ div.cards {
 }
 
 div.card {
-    box-shadow: 0 8 16px 5px gray;
+    box-shadow: 0px 4px 16px 2px gainsboro;
     width: calc((100% / 4) - 10px);
     position: relative;
     margin: 5px 5px;
@@ -158,7 +159,6 @@ div.card {
 
 div.card img {
     width: 100%;
-    height: 100%;
     border-top-left-radius: 16px;
 }
 
@@ -185,24 +185,190 @@ div.card:hover p{
 
 /* ************************************************************************* */
 /* ************************************************************************* */
+
+/* Start design about */
+
+section.about {
+    background-color: rgba(221, 221, 221, 0.127);
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+section.about h3 {
+    text-align: center;
+    margin: 0 ;
+    letter-spacing: 4px;
+    color: rgb(6, 42, 56);
+    font-weight: 600;
+}
+
+section.about hr {
+    width: 40%;
+    color: rgba(0, 47, 128, 0.218);
+    display: block;
+    margin: 100px auto 100px ;
+}
+
+div.cards2 {
+    display: flex;
+    flex-flow: row nowrap;
+    margin: 10px 10px 10px 10px;
+}
+
+div.card2 {
+    box-shadow: 0px 4px 16px 2px gainsboro;
+    width: calc((100% / 4) - 10px);
+    margin: 5px 5px;
+    border-radius: 10px;
+}
+
+div.card2 img {
+    width: 100%;
+    display: block;
+}
+
+div.card2 div.about-content {
+    padding: 0 15px;
+}
+
+.about-content h4 , h5 {
+    font-weight: 600;
+    margin: 15px 0 7px 0;
+}
+.about-content h4 {
+    letter-spacing: 1.5px;
+}
+
+.about-content h5 {
+    color: gray;
+}
+
+.about-content p {
+    padding: 0 15px 10px 0;
+    text-align: justify;
+    line-height: 23px;
+}
+
+div.press input {
+    width: 100%;
+    padding: 10px ;
+    margin-top: 10px;
+    background-color: gainsboro;
+    border: #fff;
+    color: black;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+div.press input:hover {
+    color: green;
+}
+
+/* End design about */
+
 /* ************************************************************************* */
 /* ************************************************************************* */
+
+/* Start design the contact */
+
+section.contact {
+    background-color: rgba(221, 221, 221, 0.127);
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+section.contact h3 {
+    text-align: center;
+    margin: 0 ;
+    letter-spacing: 4px;
+    color: rgb(6, 42, 56);
+    font-weight: 600;
+}
+
+section.contact hr {
+    width: 40%;
+    color: rgba(0, 47, 128, 0.218);
+    display: block;
+    margin: 100px auto 70px ;
+}
+
+section.contact p {
+    padding-left: 50px;
+    font-weight: bolder;
+    color: rgb(65, 65, 65);
+    padding-bottom: 30px;
+}
+
+section.contact div.form {
+    padding: 0 50px 50px;
+}
+
+div.form input {
+    width: 100%;
+    margin: 5px 0;
+    padding: 7px 0 7px 20px;
+    letter-spacing: 2px;
+}
+
+div.form input:focus {
+    outline: 1px solid black;
+    background-color: black;
+    color: #fff;
+    border: 1px solid black;
+}
+
+div.form button {
+    width: 15%;
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px gainsboro;
+    background-color: #000;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.4s ease-in;
+}
+
+div.form button:hover {
+    background-color: rgb(12, 86, 17);
+}
+
+div.form button:focus {
+    background-color: pink;
+}
+
+/* End design the contact */
+
 /* ************************************************************************* */
 /* ************************************************************************* */
+
+/* Start design the footer */
+
+footer {
+    background-color: #000;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+footer span {
+    color: rgba(0, 128, 0, 0.977);
+    font-weight: lighter;
+    font-size: 19px;
+}
+/* End design the footer */
+
 /* ************************************************************************* */
 /* ************************************************************************* */
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -216,4 +382,55 @@ div.card:hover p{
     header h1 span.one {
         margin-bottom: 5px;
     }
+
+/* **************************************************************** */
+
+    div.card {
+        width: calc((100% / 2) - 10px);
+    }
+    
+/* **************************************************************** */
+
+    div.cards2 {
+        flex-flow: row wrap;
+    }
+    
+    div.card2 {
+        width: calc((100% / 2) - 10px);
+    }    
+    /* End design about */
+    
+
+    div.form button {
+        width: 40%;
+    }
+    
+}
+
+@media screen and  (max-width : 513px) {
+
+    div.card {
+        width: calc(100% - 10px);
+    }
+    
+/* **************************************************************** */
+    
+    div.card2 {
+        width: calc((100% ) - 10px);
+    }    
+    /* End design about */
+
+    footer {
+        height: 30px;
+        padding: 0 10px;
+    }
+    
+    footer p {
+        font-size: 10px;
+    }
+    
+    footer span {
+        font-size: 12px;
+    }
+    
 }
